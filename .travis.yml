@@ -19,6 +19,7 @@ before_install:
 - chmod +x mvnw
 deploy:
   provider: heroku
+  app: guarded-temple-02873
   on:
     all_branches: true
   api_key:

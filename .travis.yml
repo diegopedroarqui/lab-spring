@@ -19,4 +19,7 @@ before_install:
 - chmod +x mvnw
 deploy:
   provider: heroku
-  api_key: $HEROKU_API_KEY
+  on:
+    all_branches: true
+  api_key:
+    secure: YkjkSHB0pCVPtt+ieSbtmMAfLwpFSNvbeAOUJf16N5ozqDIRrHuwqvs/WizEqaalBsezG0LNrCUkH+ug4F/vihkUmMHIB39UaGa3DHPmcrR+wmd/Km/iDNQ9VsaNAVVeiTF8uUAkNLj6xuCRa9I2xbgt1Mv/l1lG520LYvKMORiLeN0w8A3uVxxuC5zlXHJxd+mL4rdhq8CpGXP6/u7PO/XFcxqQS+ZBXTk97wGsgDvzowd8O2xb2DwoFnEJw2gfhniN4f/Jzw2uGY1z1hxrxud7DUGcxCWhhAvxzMuDwWad+DfbESNigyfJvqGUyNuJ7CxxSqP19zzSeR678RZfMKFFPqJz18J2gda3EuJ+EI04bm67+2L7nJ+V0+O/XlFmjTsmMv32spanWneu8Vdc96bWMyeBMKFonaUBKkz892X2eGmZPFS23HYeLQa24sY6Gu2mR4uxPYv2AdNNEhusmoMD+9bP9I1Aeujyds7V1t+pXZ50s127NxAswmAlIxK5F50NDRs8rGYXH/fKbMq7xlcPzAqc5XwjfkJ3Y+aV2eCX8GU9jhAG2PIo8HZ6eEuyecGTPpO1hMggNs1yAlSUnVsIgy3dCsgGHx9T9Yo4QzYyHpsSymbmiuNcHXrpIHiHYny5nku5VrGuVGk1uNbgCaa1NdXea3yNbazz7RYx1sA=

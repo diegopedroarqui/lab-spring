@@ -19,6 +19,4 @@ before_install:
 - chmod +x mvnw
 deploy:
   provider: heroku
-  on:
-    all_branches: true
   api_key: $HEROKU_API_KEY

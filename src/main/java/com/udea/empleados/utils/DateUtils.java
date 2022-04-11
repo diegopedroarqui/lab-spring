@@ -15,7 +15,7 @@ public class DateUtils {
                 (a.get(MONTH) == b.get(MONTH) && a.get(DATE) > b.get(DATE))) {
             diff--;
         }
-        return diff;
+        return Math.abs(diff);
     }
 
     public static Calendar getCalendar(Date date) {

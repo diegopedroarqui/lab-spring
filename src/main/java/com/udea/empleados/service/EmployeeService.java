@@ -56,4 +56,9 @@ public class EmployeeService {
         this.employeeRepository.save(employee);
         return true;
     }
+
+    public Employee getEmployeeById(Long id) {
+        return this.employeeRepository.findById(id)
+                .orElseThrow(() -> new EmployeeNotFoundException("No existe empleado con id " + id));
+    }
 }
